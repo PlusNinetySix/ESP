@@ -1,32 +1,31 @@
+//JGore
 import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.io.BufferedReader;
 
 public class esp 
 {
 	
 	static int gradesMin(int [] grades)
 	{
-		
+		System.out.println("The smallest grade is ");
 	}
 	static int gradesMax(int [] grades)
 	{
-		// Finding the largest element
-	      double max = a[0];
-	      for (int i = 1; i < a.length; i++) {
-	         if (a[i] > max) max = a[i];
-	      }
-	      System.out.println("Max is " + max);  
+		System.out.println("The largest grade is ");
 	}
 	static double gradesMean(int [] grades)	
 	{
-		
+		System.out.println("The average grade is ");
 	}
 	static int gradesMedian(int [] grades)
 	{
-		
+		System.out.println("The middle grade is ");
 	}
 	static int [] gradesDistribution(int [] grades)
 	{
@@ -48,14 +47,15 @@ public class esp
 	
 	public static void main(String[] args) throws IOException
 	{
-		int [] a=new int[n];
 		Scanner fin=new Scanner(new FileReader("grades.txt"));
-		do //read in each line of the text file and print it
+			int n=fin.nextInt();
+				int [] a=new int[n];
+				
+		for(int i=0;i<n;i++)
 		{
-			System.out.println(fin.nextLine());
+			a[i]=fin.nextInt();
 		}
-			while(fin.hasNextLine());
-			
+			System.out.println(n);
 		fin.close();
 	}
 
