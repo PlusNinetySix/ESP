@@ -1,19 +1,16 @@
 //JGore
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.io.BufferedReader;
 
 public class esp 
 {
 	
 	static int gradesMin(int [] grades)
 	{
-
+		return 
 	}
 	static int gradesMax(int [] grades)
 	{
@@ -31,16 +28,8 @@ public class esp
 	{
 		int [] distro= {0,0,0,0,0};
 		
-	}
-	//extra credit---remove this function if you don't do the EC
-	static double gradesStandardDev(int [] grades)
-	{
 		
 	}
-	/* you will need to fill in the arguments for this function.
-	 * the arguments should be the various statistics you computed
-	 * and should print them out in a neatly-formatted manner.
-	 */
 	static void printGradesInfo()
 	{
 		
@@ -55,6 +44,7 @@ public class esp
 		for(int i=0;i<n;i++)
 		{
 			a[i]=fin.nextInt();
+				Arrays.sort(a);
 		}
 			//System.out.println(n);
 		fin.close();
