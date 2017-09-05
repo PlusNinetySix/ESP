@@ -13,22 +13,23 @@ public class esp
 	
 	static int gradesMin(int [] grades)
 	{
-		System.out.println("The smallest grade is ");
+
 	}
 	static int gradesMax(int [] grades)
 	{
-		System.out.println("The largest grade is ");
+
 	}
 	static double gradesMean(int [] grades)	
 	{
-		System.out.println("The average grade is ");
+
 	}
 	static int gradesMedian(int [] grades)
 	{
-		System.out.println("The middle grade is ");
+		
 	}
 	static int [] gradesDistribution(int [] grades)
 	{
+		int [] distro= {0,0,0,0,0};
 		
 	}
 	//extra credit---remove this function if you don't do the EC
@@ -55,7 +56,7 @@ public class esp
 		{
 			a[i]=fin.nextInt();
 		}
-			System.out.println(n);
+			//System.out.println(n);
 		fin.close();
 	}
 
