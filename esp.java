@@ -10,15 +10,15 @@ public class esp
 	
 	static int gradesMin(int [] grades)
 	{
-		return 
+		return grades[0];
 	}
 	static int gradesMax(int [] grades)
 	{
-
+		return grades[grades.length-1];
 	}
 	static double gradesMean(int [] grades)	
 	{
-
+		
 	}
 	static int gradesMedian(int [] grades)
 	{
@@ -26,13 +26,14 @@ public class esp
 	}
 	static int [] gradesDistribution(int [] grades)
 	{
-		int [] distro= {0,0,0,0,0};
+		int [] distro = {0,0,0,0,0};
 		
 		
 	}
 	static void printGradesInfo()
 	{
-		
+		System.out.println(gradesMin());
+		System.out.println(gradesMax());
 	}	
 	
 	public static void main(String[] args) throws IOException
@@ -46,7 +47,6 @@ public class esp
 			a[i]=fin.nextInt();
 				Arrays.sort(a);
 		}
-			//System.out.println(n);
 		fin.close();
 	}
 
