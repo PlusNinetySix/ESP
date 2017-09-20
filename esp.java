@@ -70,10 +70,10 @@ public class esp
 		for(int i=0;i<n;i++)
 		{
 			a[i]=fin.nextInt();
-				Arrays.sort(a);
 		}
-		fin.close();
-			printGradesInfo(a);
+		Arrays.sort(a);
+			fin.close();
+				printGradesInfo(a);
 	}
 
 }
