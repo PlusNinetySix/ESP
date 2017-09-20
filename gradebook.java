@@ -3,29 +3,35 @@ import java.util.Arrays;
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.IOException;
-
-public class esp
-{
 	
-	static int gradesMin(int [] grades)
+public class gradebook
+{
+	int [] grades;
+	
+	int Min() 
 	{
 		return grades[0];
 	}
-	static int gradesMax(int [] grades)
+	
+	int Max()
 	{
 		return grades[grades.length-1];
 	}
-	static double gradesMean(int [] grades)	
+	
+	double Mean()
 	{
+		{
 		double sum = 0;
 			for(int i = 0; i<grades.length; i++)
 			{
 				sum = (sum + grades[i]);
 			}		
-		sum = sum/grades.length;
-			return sum;
+			sum = sum/grades.length;
+				return sum;
+		}
 	}
-	static double gradesMedian(int [] grades)
+	
+	double Median()
 	{
 		double median;
 		if (grades.length % 2 == 0)
@@ -34,7 +40,8 @@ public class esp
 			median = (double) grades[grades.length/2];
 				return median;
 	}
-	static int [] gradesDistribution(int [] grades)
+	
+	int[] Distrobution()
 	{
 		int [] distro = {0,0,0,0,0};
 		for(int i = 0; i<grades.length; i++) 
@@ -47,21 +54,8 @@ public class esp
 		}
 		return distro;
 	}
-	static void printGradesInfo(int [] grades)
-	{
-		int [] distro = gradesDistribution(grades); 
-		System.out.println("The lowest grade is " + gradesMin(grades));
-		System.out.println("The highest grade is " + gradesMax(grades));
-		System.out.println("The average grade is " + gradesMean(grades));
-		System.out.println("The middle grade is " + gradesMedian(grades));
-		System.out.println("You have "+ distro[4] +" F(s)");
-		System.out.println("You have "+ distro[3] +" D(s)");
-		System.out.println("You have "+ distro[2] +" C(s)");
-		System.out.println("You have "+ distro[1] +" B(s)");
-		System.out.println("You have "+ distro[0] +" A(s)");
-	}	
 	
-	public static void main(String[] args) throws IOException
+	public static void gbook(String[] args) throws IOException
 	{
 		Scanner fin=new Scanner(new FileReader("grades.txt"));
 			int n=fin.nextInt();
@@ -73,7 +67,5 @@ public class esp
 		}
 		Arrays.sort(a);
 			fin.close();
-				printGradesInfo(a);
 	}
-
 }

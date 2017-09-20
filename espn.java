@@ -6,9 +6,14 @@ import java.io.IOException;
 	
 public class espn
 {
-	private class gradebooks
+	public static void main(String[] args) throws IOException
 	{
+		Scanner cin=new Scanner(System.in);
+		System.out.println("Enter a command");
+		String command;
 		
+		gradebook g = null;
+		command =cin.nextLine();
+		if(command.equalsIgnoreCase());
 	}
-
 }
