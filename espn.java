@@ -13,7 +13,30 @@ public class espn
 		String command;
 		
 		gradebook g = null;
-		command =cin.nextLine();
-		if(command.equalsIgnoreCase());
+                {
+                   command = cin.nextLine(); 
+                    if(command.equalsIgnoreCase("Max"));
+                    {
+                        System.out.println(g.Max());
+                    }
+                    if(command.equalsIgnoreCase("Min"));
+                    {
+                        System.out.println(g.Min());
+                    }
+                    if(command.equalsIgnoreCase("Average"));
+                    {
+                        System.out.println(g.Mean());
+                    }
+                    if(command.equalsIgnoreCase("Median"));
+                    {
+                        System.out.println(g.Median());
+                    }
+                    if(command.equalsIgnoreCase("Distrobution"));
+                    {
+                        System.out.println(g.Distrobution());
+                    }
+                }
+		
+		
 	}
 }
