@@ -55,17 +55,17 @@ public class gradebook
 		return distro;
 	}
 	
-	public static void gbook(String[] args) throws IOException
+	public gradebook(String filename) throws IOException
 	{
-		Scanner fin=new Scanner(new FileReader("grades.txt"));
+		Scanner fin=new Scanner(new FileReader(filename));
 			int n=fin.nextInt();
-				int [] a=new int[n];
+				grades=new int[n];
 				
 		for(int i=0;i<n;i++)
 		{
-			a[i]=fin.nextInt();
+			grades[i]=fin.nextInt();
 		}
-		Arrays.sort(a);
+		Arrays.sort(grades);
 			fin.close();
 	}
 }
